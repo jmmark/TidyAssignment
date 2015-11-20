@@ -1,7 +1,7 @@
 ---
-title: "Tidy Data Assignment Codebook"
-author: "Jake Markman"
-date: "11/19/2015"
+title: Tidy Data Assignment Codebook
+author: Jake Markman
+date: 11/19/2015
 output:
   html_document:
     keep_md: yes
@@ -50,24 +50,74 @@ See README.md in this repo https://github.com/jmmark/TidyAssignment for more det
 ##Description of the variables in the Tidy_Assignment_Table.txt file
 180 obs. of  68 variables  
 Variable names:  
- [1] "Subject"                         "Activity"                        "Time_Body_Accel_Stan_X_Mean"     "Time_Body_Accel_Stan_Y_Mean"      
- [5] "Time_Body_Accel_Stan_Z_Mean"     "Time_Body_Accel_Stan_X_StDev"    "Time_Body_Accel_Stan_Y_StDev"    "Time_Body_Accel_Stan_Z_StDev"     
- [9] "Time_Grav_Accel_Stan_X_Mean"     "Time_Grav_Accel_Stan_Y_Mean"     "Time_Grav_Accel_Stan_Z_Mean"     "Time_Grav_Accel_Stan_X_StDev"     
-[13] "Time_Grav_Accel_Stan_Y_StDev"    "Time_Grav_Accel_Stan_Z_StDev"    "Time_Body_Accel_Jerk_X_Mean"     "Time_Body_Accel_Jerk_Y_Mean"      
-[17] "Time_Body_Accel_Jerk_Z_Mean"     "Time_Body_Accel_Jerk_X_StDev"    "Time_Body_Accel_Jerk_Y_StDev"    "Time_Body_Accel_Jerk_Z_StDev"     
-[21] "Time_Body_Gyro_Stan_X_Mean"      "Time_Body_Gyro_Stan_Y_Mean"      "Time_Body_Gyro_Stan_Z_Mean"      "Time_Body_Gyro_Stan_X_StDev"      
-[25] "Time_Body_Gyro_Stan_Y_StDev"     "Time_Body_Gyro_Stan_Z_StDev"     "Time_Body_Gyro_Jerk_X_Mean"      "Time_Body_Gyro_Jerk_Y_Mean"       
-[29] "Time_Body_Gyro_Jerk_Z_Mean"      "Time_Body_Gyro_Jerk_X_StDev"     "Time_Body_Gyro_Jerk_Y_StDev"     "Time_Body_Gyro_Jerk_Z_StDev"      
-[33] "Time_Body_Accel_Stan_Norm_Mean"  "Time_Body_Accel_Stan_Norm_StDev" "Time_Grav_Accel_Stan_Norm_Mean"  "Time_Grav_Accel_Stan_Norm_StDev"  
-[37] "Time_Body_Accel_Jerk_Norm_Mean"  "Time_Body_Accel_Jerk_Norm_StDev" "Time_Body_Gyro_Stan_Norm_Mean"   "Time_Body_Gyro_Stan_Norm_StDev"   
-[41] "Time_Body_Gyro_Jerk_Norm_Mean"   "Time_Body_Gyro_Jerk_Norm_StDev"  "Freq_Body_Accel_Stan_X_Mean"     "Freq_Body_Accel_Stan_Y_Mean"      
-[45] "Freq_Body_Accel_Stan_Z_Mean"     "Freq_Body_Accel_Stan_X_StDev"    "Freq_Body_Accel_Stan_Y_StDev"    "Freq_Body_Accel_Stan_Z_StDev"     
-[49] "Freq_Body_Accel_Jerk_X_Mean"     "Freq_Body_Accel_Jerk_Y_Mean"     "Freq_Body_Accel_Jerk_Z_Mean"     "Freq_Body_Accel_Jerk_X_StDev"     
-[53] "Freq_Body_Accel_Jerk_Y_StDev"    "Freq_Body_Accel_Jerk_Z_StDev"    "Freq_Body_Gyro_Stan_X_Mean"      "Freq_Body_Gyro_Stan_Y_Mean"       
-[57] "Freq_Body_Gyro_Stan_Z_Mean"      "Freq_Body_Gyro_Stan_X_StDev"     "Freq_Body_Gyro_Stan_Y_StDev"     "Freq_Body_Gyro_Stan_Z_StDev"      
-[61] "Freq_Body_Accel_Stan_Norm_Mean"  "Freq_Body_Accel_Stan_Norm_StDev" "Freq_Body_Accel_Jerk_Norm_Mean"  "Freq_Body_Accel_Jerk_Norm_StDev"  
-[65] "Freq_Body_Gyro_Stan_Norm_Mean"   "Freq_Body_Gyro_Stan_Norm_StDev"  "Freq_Body_Gyro_Jerk_Norm_Mean"   "Freq_Body_Gyro_Jerk_Norm_StDev"   
->
+ [1] Subject  
+ [2] Activity  
+ [3] Time_Body_Accel_Stan_X_Mean  
+ [4] Time_Body_Accel_Stan_Y_Mean  
+ [5] Time_Body_Accel_Stan_Z_Mean  
+ [6] Time_Body_Accel_Stan_X_StDev  
+ [7] Time_Body_Accel_Stan_Y_StDev  
+ [8] Time_Body_Accel_Stan_Z_StDev  
+ [9] Time_Grav_Accel_Stan_X_Mean  
+ [10] Time_Grav_Accel_Stan_Y_Mean  
+ [11] Time_Grav_Accel_Stan_Z_Mean  
+ [12] Time_Grav_Accel_Stan_X_StDev  
+ [13] Time_Grav_Accel_Stan_Y_StDev  
+ [14] Time_Grav_Accel_Stan_Z_StDev  
+ [15] Time_Body_Accel_Jerk_X_Mean  
+ [16] Time_Body_Accel_Jerk_Y_Mean  
+ [17] Time_Body_Accel_Jerk_Z_Mean  
+ [18] Time_Body_Accel_Jerk_X_StDev  
+ [19] Time_Body_Accel_Jerk_Y_StDev  
+ [20] Time_Body_Accel_Jerk_Z_StDev  
+ [21] Time_Body_Gyro_Stan_X_Mean  
+ [22] Time_Body_Gyro_Stan_Y_Mean  
+ [23] Time_Body_Gyro_Stan_Z_Mean  
+ [24] Time_Body_Gyro_Stan_X_StDev  
+ [25] Time_Body_Gyro_Stan_Y_StDev  
+ [26] Time_Body_Gyro_Stan_Z_StDev  
+ [27] Time_Body_Gyro_Jerk_X_Mean  
+ [28] Time_Body_Gyro_Jerk_Y_Mean  
+ [29] Time_Body_Gyro_Jerk_Z_Mean  
+ [30] Time_Body_Gyro_Jerk_X_StDev  
+ [31] Time_Body_Gyro_Jerk_Y_StDev  
+ [32] Time_Body_Gyro_Jerk_Z_StDev  
+ [33] Time_Body_Accel_Stan_Norm_Mean  
+ [34] Time_Body_Accel_Stan_Norm_StDev  
+ [35] Time_Grav_Accel_Stan_Norm_Mean  
+ [36] Time_Grav_Accel_Stan_Norm_StDev  
+ [37] Time_Body_Accel_Jerk_Norm_Mean  
+ [38] Time_Body_Accel_Jerk_Norm_StDev  
+ [39] Time_Body_Gyro_Stan_Norm_Mean  
+ [40] Time_Body_Gyro_Stan_Norm_StDev  
+ [41] Time_Body_Gyro_Jerk_Norm_Mean  
+ [42] Time_Body_Gyro_Jerk_Norm_StDev  
+ [43] Freq_Body_Accel_Stan_X_Mean  
+ [44] Freq_Body_Accel_Stan_Y_Mean  
+ [45] Freq_Body_Accel_Stan_Z_Mean  
+ [46] Freq_Body_Accel_Stan_X_StDev  
+ [47] Freq_Body_Accel_Stan_Y_StDev  
+ [48] Freq_Body_Accel_Stan_Z_StDev  
+ [49] Freq_Body_Accel_Jerk_X_Mean  
+ [50] Freq_Body_Accel_Jerk_Y_Mean  
+ [51] Freq_Body_Accel_Jerk_Z_Mean  
+ [52] Freq_Body_Accel_Jerk_X_StDev  
+ [53] Freq_Body_Accel_Jerk_Y_StDev  
+ [54] Freq_Body_Accel_Jerk_Z_StDev  
+ [55] Freq_Body_Gyro_Stan_X_Mean  
+ [56] Freq_Body_Gyro_Stan_Y_Mean  
+ [57] Freq_Body_Gyro_Stan_Z_Mean  
+ [58] Freq_Body_Gyro_Stan_X_StDev  
+ [59] Freq_Body_Gyro_Stan_Y_StDev  
+ [60] Freq_Body_Gyro_Stan_Z_StDev  
+ [61] Freq_Body_Accel_Stan_Norm_Mean  
+ [62] Freq_Body_Accel_Stan_Norm_StDev  
+ [63] Freq_Body_Accel_Jerk_Norm_Mean  
+ [64] Freq_Body_Accel_Jerk_Norm_StDev  
+ [65] Freq_Body_Gyro_Stan_Norm_Mean  
+ [66] Freq_Body_Gyro_Stan_Norm_StDev  
+ [67] Freq_Body_Gyro_Jerk_Norm_Mean  
+ [68] Freq_Body_Gyro_Jerk_Norm_StDev  
 
 ###Variable 1
 Name: Subject
