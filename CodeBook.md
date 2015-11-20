@@ -35,15 +35,15 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ###Cleaning of the data
 run_Analysis.R performs the following:
-  -Read in all components of the raw data from the text files, including labels
-  -Bind the subject and activity ID columns to the main data for both test and training sets
-  -Bind the test and training data subsets into one data set
-  -Assign column names to the data set
-  -Subset the data to keep only the variables which contain mean() or std() in the name
-  -Replace the integer activity labels with descriptive labels via converting to a factor
-  -Rename the numeric variables for ease of understanding
-  -Find the mean of each numeric variable, grouped by subject and activity
-  -The dataset is now tidy! Write it to a .txt file
+* Read in all components of the raw data from the text files, including labels
+* Bind the subject and activity ID columns to the main data for both test and training sets
+* Bind the test and training data subsets into one data set
+* Assign column names to the data set
+* Subset the data to keep only the variables which contain mean() or std() in the name
+* Replace the integer activity labels with descriptive labels via converting to a factor
+* Rename the numeric variables for ease of understanding
+* Find the mean of each numeric variable, grouped by subject and activity
+* The dataset is now tidy! Write it to a .txt file
 
 See README.md in this repo https://github.com/jmmark/TidyAssignment for more detailed description
 
