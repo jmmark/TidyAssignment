@@ -66,13 +66,13 @@ There are many different ways to change the integer labels currently held in the
 Renaming the variables to make them more readable is pretty subjective--one could even argue that the variables are already well named.  I chose to use a more regular structure which would both make it more readable (to my eye) and make it easier to melt the data set should I decide to later.
 
 I chose to rename everything using the following convention:
-Names take the following pattern: Domain_Force_Device_MeasType_Dimension_CalcType, where:
-  Domain_ is the wave Domain of the signal: Time or Freq(uency)
-  Force_ is the source of the force: Body or Grav(ity)
-  Device_ is the device generating the signal: Accel(erometer) or Gyro(scope)
-  MeasType_ is whether the signal is a standard signal or a derived Jerk signal: Stan(dard) or Jerk
-  Dimension_ is whether the signal was in the X, Y, or Z axis, or is the euclidian norm: X, Y, Z, or Norm
-  CalcType_ is the summary measure applied: Mean or StDev
+Names take the following pattern: *Domain_Force_Device_MeasType_Dimension_CalcType*, where:
+*  Domain_ is the wave Domain of the signal: Time or Freq(uency)
+*  Force_ is the source of the force: Body or Grav(ity)
+*  Device_ is the device generating the signal: Accel(erometer) or Gyro(scope)
+*  MeasType_ is whether the signal is a standard signal or a derived Jerk signal: Stan(dard) or Jerk
+*  Dimension_ is whether the signal was in the X, Y, or Z axis, or is the euclidian norm: X, Y, Z, or Norm
+*  CalcType_ is the summary measure applied: Mean or StDev
 
 Functionally I do this using the sub() function, which finds one pattern in a vector and replaces it with another, and the column names as a character vector.  This took several steps, but was much shorter than changing things by hand.
 
@@ -86,7 +86,8 @@ After many different intermediate versions of the script, I ultimately decided t
 ##Note on final form chosen for tidy data set
 This was the part of this assignment I spent the most time going back and forth on.  I started out with the option that the variable names really were variables themselves that described the observation, and so I should melt and deconstruct the column names, with a single numeric column reading signal.  However, I had two problems with this--first, the units reported by the Accelerometer and the Gyroscope are different, so they should not be in the same column in a tidy data set, and second mean() and standard deviation() seem to be two different observations.  I tried spreading the data back out along those axes, but since there are relatively fewer observations from the Gyroscope this ended up adding a large number of NA's, actually making the data messier.
 
-At the end of the day I talked myself around to the point of view that the 66 columns really are separate variables relating to the observation of the subject/activity pair and shouldn't be combined.  Finally I went back and checked the three criteria from Hadley Wickham's tidy data paper http://vita.had.co.nz/papers/tidy-data.pdf:
+At the end of the day I talked myself around to the point of view that the 66 columns really are separate variables relating to the observation of the subject/activity pair and shouldn't be combined.  Finally I went back and checked the three criteria from Hadley Wickham's tidy data paper http://vita.had.co.nz/papers/tidy-data.pdf
+
 1.  Each variable forms a column.
 2.  Each observation forms a row.
 3.  Each type of observational unit forms a table

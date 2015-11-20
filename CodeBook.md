@@ -120,10 +120,10 @@ Variable names:
  [68] Freq_Body_Gyro_Jerk_Norm_StDev  
 
 ###Variable 1
-Name: Subject
-Class: integer
-Values: [1:30]
-Units: N/A
+Name: Subject  
+Class: integer  
+Values: [1:30]  
+Units: N/A  
 
 Unique integer ID for the subject being observed, ranges from 1-30
 
